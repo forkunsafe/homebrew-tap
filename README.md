@@ -23,7 +23,7 @@ For an existing copied installation, disable only Codex Pac-Man, run `codex-pacm
 brew upgrade forkunsafe/tap/codex-pacman
 ```
 
-Refresh only Codex Pac-Man in SwiftBar after upgrading to restart the stream with the new code.
+After upgrading, Option-click the icon and disable only Codex Pac-Man, run `codex-pacman install --update`, then re-enable it. This makes SwiftBar re-read both code and cached launcher metadata while preserving native settings and state.
 
 To uninstall, disable the plugin, then:
 

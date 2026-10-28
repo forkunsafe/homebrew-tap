@@ -30,7 +30,8 @@ class CodexPacman < Formula
         brew install --cask codex swiftbar
 
       Configure Codex Home in SwiftBar Settings. No Codex account data is read
-      during installation. After upgrading, refresh only this plugin in SwiftBar.
+      during installation. After upgrading, Option-click and disable this plugin,
+      run `codex-pacman install --update`, then re-enable it to refresh metadata.
 
       To remove the SwiftBar links, settings, and private state before uninstalling:
         codex-pacman uninstall
