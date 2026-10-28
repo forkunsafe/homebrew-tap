@@ -35,3 +35,14 @@ brew uninstall codex-pacman
 Homebrew does not modify your SwiftBar Plugin Folder during formula installation or removal. The explicit connection/removal commands manage only this plugin. Other plugins and Codex authentication are untouched.
 
 See the [project repository](https://github.com/forkunsafe/codex-pacman) for configuration, requirements, tests, and troubleshooting. MIT licensed.
+
+## Verification
+
+The public `codex-pacman` formula was installed and tested on Apple Silicon:
+
+```sh
+brew test forkunsafe/tap/codex-pacman
+brew audit --strict forkunsafe/tap/codex-pacman
+```
+
+Both checks passed. The project test suite also checks migration from copied files while preserving native settings, stable opt links following a simulated upgrade, and link-swap rollback. Intel Homebrew installation and a real future-version upgrade remain unverified.
