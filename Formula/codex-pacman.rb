@@ -10,7 +10,7 @@ class CodexPacman < Formula
 
   def install
     libexec.install "VERSION", "cli.py", "install.py", "plugin"
-    python = Formula["python@3.15"].opt_bin/"python3.15"
+    python = formula_opt_bin("python@3.15")/"python3.15"
     inreplace libexec/"plugin/codex-pacman.sh", "for candidate in ", "for candidate in \"#{python}\" "
     (bin/"codex-pacman").write <<~SH
       #!/bin/sh
