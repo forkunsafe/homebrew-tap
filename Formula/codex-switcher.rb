@@ -1,8 +1,8 @@
 class CodexSwitcher < Formula
   desc "Select isolated Personal and Work accounts for Codex CLI"
   homepage "https://github.com/forkunsafe/codex-switcher"
-  url "https://github.com/forkunsafe/codex-switcher/releases/download/v1.0.0/codex-switcher-1.0.0.tar.gz"
-  sha256 "e6fea2b1ba862e8a881e244758ac489dab71c52b81154c45801ee048e26b5f6d"
+  url "https://github.com/forkunsafe/codex-switcher/releases/download/v1.0.1/codex-switcher-1.0.1.tar.gz"
+  sha256 "ccf1b9f47575c7d82c4a8729e4421ff78cafe2ad73ad5ecd5c3e2b6482d6aaf3"
   license :cannot_represent
 
   depends_on :macos
