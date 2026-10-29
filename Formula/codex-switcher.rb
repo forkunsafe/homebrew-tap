@@ -1,8 +1,8 @@
 class CodexSwitcher < Formula
   desc "Select isolated Personal and Work accounts for Codex CLI"
   homepage "https://github.com/forkunsafe/codex-switcher"
-  url "https://github.com/forkunsafe/codex-switcher/releases/download/v1.0.1/codex-switcher-1.0.1.tar.gz"
-  sha256 "ccf1b9f47575c7d82c4a8729e4421ff78cafe2ad73ad5ecd5c3e2b6482d6aaf3"
+  url "https://github.com/forkunsafe/codex-switcher/releases/download/v1.0.2/codex-switcher-1.0.2.tar.gz"
+  sha256 "a985c59a36d34d7ea9c9d951bc0fee5258277ea991fb60117e4414f992867382"
   license :cannot_represent
 
   depends_on :macos
@@ -25,8 +25,8 @@ class CodexSwitcher < Formula
 
   test do
     assert_match "codex-switcher #{version}", shell_output("#{bin}/codex-cli --switcher-version")
-    assert_predicate libexec/"codex-session-paths.sh", :exist?
-    assert_predicate libexec/"install.sh", :exist?
+    assert_path_exists libexec/"codex-session-paths.sh"
+    assert_path_exists libexec/"install.sh"
     refute_path_exists testpath/".codex-personal"
     refute_path_exists testpath/".codex-work"
   end
