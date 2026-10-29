@@ -70,3 +70,32 @@ The existing tap LICENSE continues to apply to the other tap files.
 The update workflow checks stable releases daily and can be run manually.
 It verifies the archive SHA256 and formula metadata before committing an update.
 Only the built-in repository token is used; no personal token is required.
+
+## ChatGPT Personal wrapper
+
+Build and maintain an isolated personal copy of the official macOS ChatGPT app.
+Requires Apple Silicon, Apple Command Line Tools, and the official app at
+`/Applications/ChatGPT.app`.
+
+```sh
+brew install forkunsafe/tap/chatgpt-wrapper
+chatgpt-personal install
+chatgpt-personal open
+```
+
+Homebrew installs the tooling and Go dependency. The explicit install command
+builds `~/Applications/ChatGPT Personal.app` from your local official app.
+Quit Personal before rebuilding; existing ChatGPT/Codex data is preserved.
+
+```sh
+brew upgrade chatgpt-wrapper
+chatgpt-personal update --force
+```
+
+Homebrew upgrades tooling only. For optional hourly rebuild checks:
+`chatgpt-personal autoupdate install`. To remove the app while preserving data,
+run `chatgpt-personal uninstall` before `brew uninstall chatgpt-wrapper`.
+
+See the [project](https://github.com/forkunsafe/chatgpt-wrapper) for signing
+implications and known limitations. Its formula and tooling use Apache License
+2.0 with Commons Clause 1.0; see [LICENSE.chatgpt-wrapper](LICENSE.chatgpt-wrapper).
