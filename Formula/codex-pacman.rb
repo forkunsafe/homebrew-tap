@@ -1,8 +1,8 @@
 class CodexPacman < Formula
   desc "Tiny SwiftBar plugin that tracks your Codex limits and eats them"
   homepage "https://github.com/forkunsafe/codex-pacman"
-  url "https://github.com/forkunsafe/codex-pacman/releases/download/v1.0.5/codex-pacman-1.0.5.tar.gz"
-  sha256 "445d2adce6ae671ae82c7b183b0f5c732f928587fe34e3642701dc0a33b553f4"
+  url "https://github.com/forkunsafe/codex-pacman/releases/download/v1.0.6/codex-pacman-1.0.6.tar.gz"
+  sha256 "e4a7159a90ab9d6641eb0332ee686cb268bc9a16abf2d4404b797e4f25f09356"
   license "MIT"
 
   depends_on :macos
