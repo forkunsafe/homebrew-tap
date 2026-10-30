@@ -23,7 +23,7 @@ For an existing copied installation, disable only Codex Pac-Man, run `codex-pacm
 brew upgrade forkunsafe/tap/codex-pacman
 ```
 
-After upgrading, Option-click the icon and disable only Codex Pac-Man, run `codex-pacman install --update`, then re-enable it. This makes SwiftBar re-read both code and cached launcher metadata while preserving native settings and state.
+After upgrading, use SwiftBar → Settings → Plugins to disable only Codex Pac-Man, run `codex-pacman install --update`, then re-enable it. This makes SwiftBar re-read both code and cached launcher metadata while preserving native settings and state.
 
 To uninstall, disable the plugin, then:
 
@@ -45,7 +45,7 @@ brew test forkunsafe/tap/codex-pacman
 brew audit --strict forkunsafe/tap/codex-pacman
 ```
 
-Both checks passed. The project test suite also checks migration from copied files while preserving native settings, stable opt links following a simulated upgrade, and link-swap rollback. Intel Homebrew installation and a real future-version upgrade remain unverified.
+Both checks passed. The project test suite also checks migration from copied files while preserving native settings, stable opt links following a simulated upgrade, and link-swap rollback. Intel Homebrew installation remains unverified; a real 1.0.1-to-1.0.2 upgrade was also tested.
 
 ## Codex Switcher
 

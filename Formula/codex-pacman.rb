@@ -1,8 +1,8 @@
 class CodexPacman < Formula
   desc "Tiny SwiftBar plugin that tracks your Codex limits and eats them"
   homepage "https://github.com/forkunsafe/codex-pacman"
-  url "https://github.com/forkunsafe/codex-pacman/releases/download/v1.0.3/codex-pacman-1.0.3.tar.gz"
-  sha256 "77bdc261e870a422723feb5a43ecf52730732d6a6a3c05bffd62076a5b1fff09"
+  url "https://github.com/forkunsafe/codex-pacman/releases/download/v1.0.4/codex-pacman-1.0.4.tar.gz"
+  sha256 "f9d1d0604d9515ca0ac0d252dc921faa14b150b29101028d883bfefdc25339c9"
   license "MIT"
 
   depends_on :macos
@@ -30,7 +30,7 @@ class CodexPacman < Formula
         brew install --cask codex swiftbar
 
       Configure Codex Home in SwiftBar Settings. No Codex account data is read
-      during installation. After upgrading, Option-click and disable this plugin,
+      during installation. After upgrading, use SwiftBar Settings to disable this plugin,
       run `codex-pacman install --update`, then re-enable it to refresh metadata.
 
       To remove the SwiftBar links, settings, and private state before uninstalling:
