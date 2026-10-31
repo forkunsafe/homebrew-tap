@@ -1,8 +1,8 @@
 class ChatgptWrapper < Formula
   desc "Build and maintain an isolated personal copy of the macOS ChatGPT app"
   homepage "https://github.com/forkunsafe/chatgpt-wrapper"
-  url "https://github.com/forkunsafe/chatgpt-wrapper/releases/download/v1.0.0/chatgpt-wrapper-1.0.0.tar.gz"
-  sha256 "b2181566a6e3e6209d687939bab6d86f97541729ab1d74c127509e398c4c82ac"
+  url "https://github.com/forkunsafe/chatgpt-wrapper/releases/download/v1.0.1/chatgpt-wrapper-1.0.1.tar.gz"
+  sha256 "6409dfa1011c72d0fe95914fa0d3e81a2157dca5d3987ef6494dc6681f309aaa"
   license :cannot_represent
 
   depends_on arch: :arm64
